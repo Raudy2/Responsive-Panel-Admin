@@ -142,6 +142,29 @@ tr td:last-child{
 	padding-right: 1rem;
 }
 
+#nav-toggle:checked + .sidebar{
+	width: 70px;
+}
+#nav-toggle:checked + .sidebar .sidebar-brand,
+#nav-toggle:checked + .sidebar li{
+	padding-left: 1rem;
+	text-align: center;
+}
+#nav-toggle:checked + .sidebar li a{
+	padding-left: 0rem;
+}
+#nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child{
+	display: none;
+}
+#nav-toggle:checked ~ .main-content{
+	margin-left: 70px;
+}
+
+#nav-toggle:checked ~ .main-content header{
+	width: calc(100% - 70px);
+	left: 70px;
+}
 .main-content{
 	transition: margin-left 300ms;
 	margin-left: 345px;
